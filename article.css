@@ -1,0 +1,53 @@
+.article-progress { position: fixed; inset: 0 auto auto 0; height: 3px; width: 0; background: var(--accent); z-index: 100; }
+.article-header { position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(14px); }
+.back-link { justify-self: center; font-size: 13px; display: flex; gap: 9px; align-items: center; }
+.back-link span { transition: transform .2s; }
+.back-link:hover span { transform: translateX(-4px); }
+.article-main { width: min(calc(100% - 48px), 860px); margin-inline: auto; }
+.article-hero { padding: 110px 0 75px; border-bottom: 1px solid var(--line); text-align: center; }
+.article-hero .tag { color: var(--accent); margin-bottom: 24px; }
+.article-hero h1 { font: 400 clamp(44px, 7vw, 76px)/1.22 Georgia, "Songti SC", serif; letter-spacing: -.045em; margin: 0 auto 28px; max-width: 850px; }
+.article-deck { max-width: 600px; margin: 0 auto 35px; color: var(--muted); font-size: 17px; line-height: 1.8; }
+.article-meta { display: flex; justify-content: center; gap: 20px; color: var(--muted); font-size: 11px; letter-spacing: .09em; }
+.article-meta span + span::before { content: "·"; margin-right: 20px; }
+.article-cover { height: min(52vw, 520px); min-height: 300px; margin: 60px 0 90px; display: grid; place-items: center; overflow: hidden; position: relative; }
+.cover-design { background: #b8c9c1; }
+.cover-process { background: #d8c5b4; }
+.cover-life { background: #c9d176; }
+.cover-type { font: italic clamp(52px, 12vw, 130px)/.8 Georgia, serif; letter-spacing: -.07em; z-index: 2; }
+.cover-orbit { position: absolute; width: 420px; height: 210px; border: 1px solid currentColor; border-radius: 50%; transform: rotate(-25deg); }
+.cover-square { position: absolute; width: 180px; height: 230px; background: var(--accent); transform: rotate(9deg); }
+.cover-grid { width: 74%; height: 70%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; transform: rotate(-3deg); }
+.cover-grid i { border: 1px solid rgba(32,35,31,.35); background: rgba(242,240,233,.25); }
+.cover-sun { width: 190px; height: 190px; border-radius: 50%; background: var(--accent); box-shadow: -90px 80px 0 rgba(242,240,233,.7); }
+.article-body { width: min(100%, 680px); margin-inline: auto; font-family: Georgia, "Songti SC", "Microsoft YaHei", serif; font-size: 18px; line-height: 2.05; }
+.article-body > p { margin: 0 0 30px; }
+.article-body > p:first-child::first-letter { float: left; font-size: 70px; line-height: .8; padding: 13px 10px 0 0; color: var(--accent); }
+.article-body h2 { font-size: 32px; line-height: 1.4; font-weight: 400; margin: 80px 0 25px; letter-spacing: -.02em; }
+.article-body h2::before { content: attr(data-index); display: block; color: var(--accent); font: 11px Arial, sans-serif; letter-spacing: .18em; margin-bottom: 12px; }
+.article-body blockquote { margin: 55px -60px; padding: 35px 45px; background: var(--surface); border-left: 3px solid var(--accent); font-size: 24px; line-height: 1.65; }
+.article-body blockquote p { margin: 0; }
+.article-body ul { margin: 25px 0 35px; padding-left: 1.2em; }
+.article-body li { padding-left: .5em; margin: 12px 0; }
+.article-end { text-align: center; margin: 100px auto 60px; color: var(--muted); }
+.article-end i { display: block; width: 8px; height: 8px; background: var(--accent); transform: rotate(45deg); margin: 0 auto 20px; }
+.article-nav { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; margin: 80px 0 120px; }
+.article-nav a { padding: 36px; transition: background .25s; }
+.article-nav a + a { border-left: 1px solid var(--line); text-align: right; }
+.article-nav a:hover { background: var(--surface); }
+.article-nav small { display: block; color: var(--muted); font-size: 10px; letter-spacing: .13em; margin-bottom: 12px; }
+.article-nav strong { font: 18px/1.5 Georgia, "Songti SC", serif; font-weight: 400; }
+
+@media (max-width: 600px) {
+  .article-header { grid-template-columns: 1fr auto; }
+  .article-header .back-link { justify-self: end; }
+  .article-header .theme-toggle { display: none; }
+  .article-hero { padding: 75px 0 55px; }
+  .article-main { width: min(calc(100% - 36px), 860px); }
+  .article-cover { margin: 40px 0 60px; }
+  .article-body { font-size: 17px; line-height: 1.95; }
+  .article-body h2 { margin-top: 60px; font-size: 28px; }
+  .article-body blockquote { margin: 45px 0; padding: 28px 24px; font-size: 21px; }
+  .article-nav { grid-template-columns: 1fr; margin-bottom: 70px; }
+  .article-nav a + a { border-left: 0; border-top: 1px solid var(--line); }
+}

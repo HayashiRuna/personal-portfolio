@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="林屿的个人作品集与博客，记录设计、开发与生活。">
+  <meta name="theme-color" content="#f3f1eb">
+  <title>林屿 — 设计、开发与随笔</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2228%22 fill=%22%23222622%22/><text x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22%23f4f1e9%22>屿</text></svg>">
+  <link rel="stylesheet" href="styles.css?v=20260621-4">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页">LY<span>·</span></a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#work">作品</a>
+      <a href="#notes">文章</a>
+      <a href="#about">关于</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换明暗主题">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> 独立设计师 & 前端开发者</p>
+        <h1>把复杂的事，<br>做得<span class="accent-word">简单而好看。</span></h1>
+        <p class="hero-intro">你好，我是林屿。我关注数字产品、视觉设计和人与技术之间那些细微却重要的连接。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">看看我的作品 <span>↘</span></a>
+          <a class="text-link" href="mailto:hello@example.com">和我聊聊 <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-label="抽象几何装饰">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="art-card">
+          <span class="art-number">01</span>
+          <div class="art-line"></div>
+          <p>CURIOUS<br>BY DESIGN</p>
+          <span class="art-year">© 2026</span>
+        </div>
+        <div class="art-dot"></div>
+      </div>
+      <a class="scroll-hint" href="#work"><span>向下探索</span><i></i></a>
+    </section>
+
+    <section class="work section-wrap" id="work">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>近期作品</h2>
+        </div>
+        <a class="text-link" href="works.html">查看全部作品 <span>↗</span></a>
+      </div>
+
+      <div class="project-grid">
+        <a class="project project-large reveal" href="works.html" aria-label="查看「冬日海岸」摄影专题">
+          <div class="project-visual project-photo">
+            <img src="assets/works/winter-shore.webp" alt="冬日海岸上独自行走的人" loading="lazy">
+            <span class="project-index">01</span>
+          </div>
+          <div class="project-meta">
+            <div><h3>冬日海岸</h3><p>摄影 / 海边 / 2026</p></div>
+            <span class="round-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project reveal" href="works.html" aria-label="查看「夜行」摄影专题">
+          <div class="project-visual project-photo">
+            <img src="assets/works/night-walk.webp" alt="雨后城市巷道中的夜行者" loading="lazy">
+            <span class="project-index">02</span>
+          </div>
+          <div class="project-meta">
+            <div><h3>夜行</h3><p>摄影 / 城市 / 2026</p></div>
+            <span class="round-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project reveal" href="works.html" aria-label="查看「山止川行」品牌项目">
+          <div class="project-visual visual-three">
+            <span class="project-index">03</span>
+            <div class="poster"><p class="poster-cn">山止<br>川行</p><p class="poster-en">THE MOUNTAIN<br>& THE RIVER</p></div>
+            <div class="sun"></div>
+          </div>
+          <div class="project-meta">
+            <div><h3>山止川行 · 户外品牌</h3><p>Brand Identity / 2025</p></div>
+            <span class="round-arrow">↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="notes section-wrap" id="notes">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">FIELD NOTES</p><h2>最近在写</h2></div>
+        <a class="text-link" href="articles.html">查看全部文章 <span>↗</span></a>
+      </div>
+      <div class="notes-list">
+        <article class="note reveal">
+          <a href="posts/design-is-clarity.html">
+            <time datetime="2026-05-18">2026.05.18</time>
+            <div><p class="tag">设计思考</p><h3>设计不是让东西变好看，而是让选择变清晰</h3></div>
+            <p class="note-excerpt">关于克制、秩序，以及一个界面如何悄悄影响人的判断。</p>
+            <span>↗</span>
+          </a>
+        </article>
+        <article class="note reveal">
+          <a href="posts/start-a-project.html">
+            <time datetime="2026-04-02">2026.04.02</time>
+            <div><p class="tag">工作方法</p><h3>我如何从一个模糊的想法开始做项目</h3></div>
+            <p class="note-excerpt">没有灵感的时候，先搭起一副能够继续思考的脚手架。</p>
+            <span>↗</span>
+          </a>
+        </article>
+        <article class="note reveal">
+          <a href="posts/reset-life.html">
+            <time datetime="2026-02-21">2026.02.21</time>
+            <div><p class="tag">生活片段</p><h3>在春天来临以前，重新整理生活</h3></div>
+            <p class="note-excerpt">一些关于阅读、散步、旧物和重新开始的小事。</p>
+            <span>↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-card reveal">
+        <div class="about-mark">“</div>
+        <div class="about-copy">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>我相信好的设计，<br>应该像一阵恰到好处的风。</h2>
+          <p>过去 6 年，我一直在数字产品与品牌体验之间工作。对我而言，设计不是装饰，而是一种整理信息、理解他人，也理解自己的方式。</p>
+          <a class="text-link" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+        </div>
+        <div class="availability"><i></i> 目前可接受新项目</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap">
+    <div><a class="brand" href="#top">LY<span>·</span></a><p>把值得记住的东西，留在这里。</p></div>
+    <div class="socials"><a href="#">即刻</a><a href="#">GitHub</a><a href="#">Instagram</a></div>
+    <p class="copyright">© 2026 LIN YU. BUILT WITH CURIOSITY.</p>
+  </footer>
+</body>
+</html>
